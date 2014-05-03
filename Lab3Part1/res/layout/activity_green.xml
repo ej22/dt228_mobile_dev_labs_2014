@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greenBackground" >
+    
+    <Button
+        android:id="@+id/greenActivityBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@android:drawable/btn_default"
+        android:text="@string/red"
+        android:onClick="onClick" />
+    
+        <TextView
+        android:id="@+id/greenTxBx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/green"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/greenActivityBtn"
+         />
+
+</RelativeLayout>

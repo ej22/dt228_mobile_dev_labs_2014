@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lab5Databases</string>
+    <string name="action_settings">Settings</string>
+    <string name="task_name">Task Name</string>
+    <string name="task_Description">Task Description</string>
+    <string name="complete">Completed</string>
+    <string name="enter_text">Enter text</string>
+	<string name="enter_number">Enter 1 for Complete or 0 if not</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+    <string name="btn_database">Add to Database</string>
+	
+        
+</resources>

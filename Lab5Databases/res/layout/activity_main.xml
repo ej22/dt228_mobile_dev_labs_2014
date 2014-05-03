@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/labelTaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_name" 
+        android:padding="15sp"
+        />
+    
+     <EditText 
+        android:id="@+id/editTextTaskName"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="@string/enter_text"
+        android:inputType="text"
+        />
+    
+       <TextView
+        android:id="@+id/labelTaskDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_Description" 
+        android:padding="15sp"
+        />
+    
+      <EditText 
+        android:id="@+id/editTextTaskDescription"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="@string/enter_text"
+        android:inputType="text"
+        android:paddingBottom="15sp"
+        />  
+        
+    <TextView
+        android:id="@+id/labelcomplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/complete" 
+        android:padding="15sp"
+        />
+    
+    <RadioGroup 
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <!-- You also don't need seperate TextView Objects to write for each button, simple assign the attribute android:text="insert_whatever_text" and it will save you from making them.
+        Additionally don't forget to set the orientation of your radiogroup as that's pretty important as well -->
+        <RadioButton 
+        	android:id="@+id/radioBtnYes"
+        	android:checked="true"
+        	android:text="yes"
+            />
+        
+
+        
+        <RadioButton 
+            android:id="@+id/radioBtnNo"
+            android:text="no"
+            />
+        
+
+        
+    </RadioGroup>
+    
+        <Button 
+            android:id="@+id/button"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:text="@string/btn_database" 
+            android:padding="15sp"
+            />
+
+</LinearLayout>
